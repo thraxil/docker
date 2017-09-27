@@ -40,8 +40,8 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* \
     && ln -s /usr/bin/nodejs /usr/local/bin/node \
-    && pip install virtualenv \
+    && pip3 install virtualenv \
     && virtualenv /ve \
-    && /ve/bin/pip install -U pip \
-    && /ve/bin/pip install wheel
+    && /ve/bin/pip3 install -U pip \
+    && /ve/bin/pip3 install wheel
 ENV PYTHONUNBUFFERED 1
