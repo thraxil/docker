@@ -22,12 +22,17 @@ RUN apt-get update \
                 libxslt-dev \
                 libxslt1-dev \
                 postgresql-client \
+								python3 \
                 python-all-dev \
+                python3-all-dev \								
                 python-dev \
+                python3-dev \								
                 python-beautifulsoup \
                 python-imaging \
                 python-pip \
+                python3-pip \								
                 python-tk \
+                python3-tk \								
                 openssl \
 		&& curl -sL https://deb.nodesource.com/setup_6.x -o /tmp/nodesetup.sh \
 		&& /bin/bash /tmp/nodesetup.sh \
