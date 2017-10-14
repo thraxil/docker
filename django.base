@@ -45,3 +45,4 @@ RUN apt-get update \
     && /ve/bin/pip3 install -U pip \
     && /ve/bin/pip3 install wheel
 ENV PYTHONUNBUFFERED 1
+ADD docker-run.sh /run.sh
