@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 RUN apt-get update \
     && apt-get install -y tzdata \
     && apt-get install -qyy \
@@ -26,15 +26,14 @@ RUN apt-get update \
                 python3 \
                 python-all-dev \
                 python3-all-dev \
-                python-dev \
                 python3-dev \
-                python-pil \
+		python3-pil \
                 python3-pip \
                 python3-setuptools \
                 python-tk \
                 python3-tk \
                 openssl \
-    && curl -sL https://deb.nodesource.com/setup_10.x -o /tmp/nodesource_setup.sh \
+    && curl -sL https://deb.nodesource.com/setup_14.x -o /tmp/nodesource_setup.sh \
     && /bin/bash /tmp/nodesource_setup.sh \
     && apt-get install -qyy nodejs \
     && apt-get clean \
